@@ -8,4 +8,5 @@ WORKDIR /root/app
 RUN cpanm --installdeps --notest .
 
 EXPOSE 5000
-ENTRYPOINT ["morbo", "-l", "http://*:5000", "api.psgi"]
+ENTRYPOINT []
+CMD ["morbo", "-l", "http://*:5000", "api.psgi"]
